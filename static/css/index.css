@@ -1,0 +1,282 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: hsl(192, 100%, 9%);
+    background-color: hsl(0, 0%, 100%);
+    background-image: url('../img/bg-hero-desktop.svg');
+}
+
+body h2{
+    font-family: Poppins;
+    font-weight: 600;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header div#pg-title{
+    flex: 30%;
+}
+
+header div#pg-btn{
+    flex: 70%;
+    text-align: right;
+}
+
+header div#pg-btn button{
+    font-family: Poppins;
+    font-size: 0.5em;
+    margin: 0px 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 1px 2px 2px rgb(225 216 216);
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+    cursor: pointer;
+}
+
+header div#pg-btn button:hover{
+    opacity: 0.5;
+}
+
+header div#pg-btn button:hover{
+    opacity: 0.5;
+}
+header div.block div.text-box div.box-title{
+    text-transform: capitalize;
+}
+
+header div.block div.text-box div.box-content{
+    margin-top: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main div.block:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+main div.block.block-1{
+    flex-direction: row;
+    max-width: fit-content;
+    align-self: center;
+    box-shadow: none;
+    border-radius: 0px;
+    margin: 2px;
+}
+
+main div.block{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 700px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 1px 2px 2px rgb(225 216 216)
+}
+
+
+
+main div.block div.text-box{
+    color:  hsl(208, 28%, 10%);
+    font-size: 12px;
+    text-align: left;
+    width: 30%;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+main div.block div.text-box p.box-content{
+    font-family: 'Open Sans';
+    text-align: left;
+}
+
+main div.block div.text-box button{
+    cursor: pointer;
+    font-size: 0.8em;
+    border-radius: 20px;
+    color:hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+main div.block div.text-box button:hover{
+    opacity: 0.5;
+}
+main div.block div.illustration-box{
+    height: 100%;
+    width: 50%;
+}
+main div.block div.illustration-box img{
+    width: 100%;
+    height: 50%;
+}
+
+main div.block.last-block{
+    display: block;
+    margin-bottom: -50px;
+    padding-top: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    box-shadow: 1px -1px 6px 0px rgb(225 216 216);
+    color: hsl(192, 100%, 9%);
+    background-color: hsl(0, 0%, 100%);
+    z-index: 5;
+}
+
+main div.block.last-block h2.block-title{
+    margin: 0px;
+    font-size: 17px;
+}
+main div.block.last-block button{
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 0.5em;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color:hsl(193, 100%, 96%);
+    background-color: hsl(322, 100%, 66%);
+    margin: 10px 0px;
+}
+
+main div.block.last-block button:hover{
+    opacity: 0.5;
+}
+
+footer{
+    color: hsl(208, 11%, 89%);
+    background-color: hsl(192, 100%, 9%);
+    padding: 20px;
+    font-family: 'Open sans';
+    font-size: 15px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+
+footer div.footer-block{
+    flex: 30%;
+    margin-right: 20px;
+}
+
+footer div.footer-block.info{
+    flex: 10%;
+}
+footer div.footer-block.sm-icons{
+    justify-self: center;
+    margin-top: 50px;
+}
+
+footer div.footer-block.sm-icons a > span{
+    font-size: 25px;
+    padding: 5px;
+}
+
+footer div.footer-block.sm-icons a > span:hover{
+    color: hsl(322, 100%, 66%);
+}
+
+footer div.footer-block p{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+footer div.footer-block p span.icon{
+    align-self: center;
+    text-align: center;
+}
+
+footer div.footer-block p:nth-child(2) span.icon{
+    align-self: auto;
+}
+footer div.footer-block p:first-child span.message{
+    font-family: Poppins;
+    font-size: 28px;
+}
+footer div.footer-block p span{
+    padding: 0px 5px;
+}
+
+footer div.footer-block a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer div.footer-block a:hover{
+    text-decoration: underline;
+}
+
+footer p.copyright{
+    align-self: flex-end;
+    flex: 10%;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 400px) {
+    body{
+        background-image: url('../img/bg-hero-mobile.svg');
+        margin: 0px;
+    }
+    main div.block{
+        flex-direction: column-reverse;
+        font-size: 18px;
+    }
+    main div.block:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+    main div.block.block-1{
+        flex-direction: column;
+    }
+    main div.block div.text-box{
+        width: 100%;
+    }
+
+    main div.block div.illustration-box{
+        width: 100%;
+    }
+    footer{
+        flex-flow: column;
+        padding: 5px 10px;
+        align-items: flex-start;
+    }
+    
+    footer div.footer-block.sm-icons {
+        text-align: center;
+        align-self: center;
+    }
+
+    footer p.copyright {
+        align-self: flex-start;
+        text-align: center;
+        font-size: 10.4px;
+    }
+
+}
+#test{
+    color: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+    color: hsl(208, 11%, 55%);
+    text-transform: capitalize;
+}
+
